@@ -28,7 +28,23 @@
     <main class="content">
         <section class="card">
             <header class="card-header">
-                <h2>Section</h2>
+                <h2>Explore</h2>
+            </header>
+            <form action="/form-handling-page.html" method="post">
+                <p>
+                <label for="initial_section">I would like to:</label>
+                <select id="initial_section" name=”initial_section”>
+                    <option value="">-- Select --</option>
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                </select>
+                </p>
+                <button type=”submit”>Go!</button>
+            </form>
+        </section>
+        <section class="card">
+            <header class="card-header">
+                <h2>Example</h2>
             </header>
             <p>Here is some text</p>
             <p>More text</p>
@@ -36,15 +52,7 @@
         </section>
         <section class="card">
             <header class="card-header">
-                <h2>Secion</h2>
-            </header>
-            <p>Here is some text</p>
-            <p>More text</p>
-            <p>A little more text</p>
-        </section>
-        <section class="card">
-            <header class="card-header">
-                <h2>Secion</h2>
+                <h2>Details</h2>
             </header>
             <p>Here is some text</p>
             <p>More text</p>
