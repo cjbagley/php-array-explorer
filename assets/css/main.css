@@ -47,3 +47,11 @@ body {
 .card-header {
     background-color: #FAC748;
 }
+
+.card-header h2 {
+    padding: 10px;
+}
+
+.card-content {
+    padding: 0 10px 10px 10px;
+}
