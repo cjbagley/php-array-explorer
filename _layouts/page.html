@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{{ content }}
+<ul class="pages">
+{% for page in site.posts %}
+    <li><a href="{{ page.url }}">{{ page.title}}</a>
+    </li>
+{% endfor %}
+</ul>
