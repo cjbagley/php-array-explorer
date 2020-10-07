@@ -13,14 +13,16 @@
     <aside class="sidebar">
         <nav>
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-            </ul>
+                {% for page in site.pages %}
+                    <li><a href="{{ page.url }}">{{ page.title}}</a>
+                    </li>
+                {% endfor %}
+                </ul>
         </nav>
     </aside>
 
     <header class="header">
-        <h1>Grid Layout example</h1>
+        <h1>PHP Array Explorer</h1>
     </header>
 
     {{ content }}
@@ -44,7 +46,17 @@
                 </form>
             </div>
         </section>
+        {% for section in page.sections %}
         <section class="card">
+            <header class="card-header">
+                <h2>{{ section.title }}</h2>
+            </header>
+            <div class="card-content">
+                {{ section.content }}
+            </div>
+        </section>
+        {% endfor %}
+        <!-- <section class="card">
             <header class="card-header">
                 <h2>Example</h2>
             </header>
@@ -63,7 +75,7 @@
                 <p>More text</p>
                 <p>A little more text</p>
             </div>
-        </section>
+        </section> -->
     </main>
 </body>
 
