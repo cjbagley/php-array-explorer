@@ -13,11 +13,12 @@
     <aside class="sidebar">
         <nav>
             <ul>
-                {% for page in site.pages %}
-                    <li><a href="{{ page.url }}">{{ page.title}}</a>
-                    </li>
-                {% endfor %}
-                </ul>
+            {% for page in site.pages %}
+                {% if page.url and page.title %}
+                <li><a href="{{ page.url }}">{{ page.title}}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
         </nav>
     </aside>
 
@@ -25,20 +26,18 @@
         <h1>PHP Array Explorer</h1>
     </header>
 
-    {{ content }}
+    
 
     <main class="content">
         {% include explorer.html %}
-        {% for section in page.sections %}
         <section class="card">
             <header class="card-header">
-                <h2>{{ section.title }}</h2>
+                <h2>{{ page.title }}</h2>
             </header>
             <div class="card-content">
-                {{ section.content }}
+                {{ content }}
             </div>
         </section>
-        {% endfor %}
     </main>
 </body>
 
