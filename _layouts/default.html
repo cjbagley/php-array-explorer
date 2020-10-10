@@ -15,7 +15,7 @@
             <ul>
             {% for page in site.pages %}
                 {% if page.url and page.title %}
-                <li><a href="{{ page.url }}">{{ page.title}}</a></li>
+                    <li><a href="{{ page.url }}">{{ page.title}}</a></li>
                 {% endif %}
             {% endfor %}
             </ul>
@@ -26,7 +26,6 @@
         <h1>PHP Array Explorer</h1>
     </header>
 
-    
 
     <main class="content">
         {% include explorer.html %}

@@ -8,8 +8,9 @@
             <label for="initial_section">I would like to:</label>
             <select id="initial_section" name=”initial_section”>
                 <option value="">-- Select --</option>
-                <option value="option1">Option1</option>
-                <option value="option2">Option2</option>
+                {% for item in site.data.explorer_options %}
+                    <option value="{{ item.key }}">{{ item.value }}</option>
+                {% endfor%}
             </select>
             </p>
             <button type=”submit”>Go!</button>
