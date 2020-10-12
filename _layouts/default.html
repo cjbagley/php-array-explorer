@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="container">
+<body>
+
+    <header class="header">
+        <h1>PHP Array Explorer</h1>
+    </header>
 
     <aside class="sidebar">
         <nav>
-            <ul>
+            <ul class="list-unstyled">
             {% for page in site.pages %}
                 {% if page.url and page.title %}
                     <li><a href="{{ page.url }}">{{ page.title}}</a></li>
@@ -21,11 +25,6 @@
             </ul>
         </nav>
     </aside>
-
-    <header class="header">
-        <h1>PHP Array Explorer</h1>
-    </header>
-
 
     <main class="content">
         {% include explorer.html %}
