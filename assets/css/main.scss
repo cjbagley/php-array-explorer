@@ -1,12 +1,14 @@
 ---
 ---
 
-
-$brand-primary-colour: #119DA4;
+$primary-colour: #119DA4;
+$page-background-colour: #F8F0FB;
+$outline-colour: #3066BE;
+$header-colour: #3066BE;
 
 * { box-sizing: border-box; }
 
-html, body { height: 100%; }
+html, body { height: 100%; background-color: $page-background-colour; }
 
 :root { --grid-min: 20ch; }
 
@@ -25,7 +27,7 @@ body {
 }
 
 .header {
-    background-color: #805E73;
+    background-color: $header-colour;
     grid-area: header;
     height: 50px;
 }
@@ -34,30 +36,22 @@ body {
     margin: 0;
 }
 
-.sidebar {
-    background-color: #119DA4;
-    grid-area: sidebar;
-    height: 100%;
-    padding: 1rem;
-}
 
 .content {
-    background-color: #161F27;
     grid-area: content;
 }
 
 body {
-    background-color: #161F27;
     margin: 0;
 }
 
 .card {    
-    background-color: #F8F0FB;
     margin: 0 30px;
+    border: 2px solid $outline-colour ;
 }
 
 .card-header {
-    background-color: #FAC748;
+    background-color: $outline-colour;
 }
 
 .card-header h2 {
@@ -70,8 +64,6 @@ body {
 
 .list-unstyled {
     list-style: none;
-    // margin: 0;
-    // padding: 0;
   }
 
 /* Code Styling - https://github.com/jwarby/jekyll-pygments-themes/blob/master/native.css */
