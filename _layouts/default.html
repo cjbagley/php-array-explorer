@@ -14,17 +14,12 @@
         <h1>PHP Array Explorer</h1>
     </header>
 
-    <aside class="sidebar">
-        <nav>
-            <ul class="list-unstyled">
-            {% for page in site.pages %}
-                {% if page.url and page.title %}
-                    <li><a href="{{ page.url }}">{{ page.title}}</a></li>
-                {% endif %}
-            {% endfor %}
-            </ul>
-        </nav>
-    </aside>
+    <nav class="card-holder">
+        <ul class="list-unstyled">
+            <li>Item 1</li>
+            <li>Item 1</li>
+        </ul>
+    </nav>
 
     <main class="content">
         {% include explorer.html %}

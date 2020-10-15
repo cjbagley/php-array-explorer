@@ -4,7 +4,7 @@
 $primary-colour: #119DA4;
 $page-background-colour: #F8F0FB;
 $outline-colour: #3066BE;
-$header-colour: #3066BE;
+$header-font-colour: #3D348B;
 
 * {
 	vertical-align: baseline;
@@ -20,62 +20,24 @@ $header-colour: #3066BE;
 
 html, body { height: 100%; background-color: $page-background-colour; }
 
-:root { --grid-min: 20ch; }
-
 
 body {
-    display: grid;
-    font-family: sans-serif;
-    width: 100%;
+    font-family: Helvetica, sans-serif;
     min-height: 100vh;
-    grid-template-columns: minmax(auto, 12ch) minmax(40ch, 1fr);
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-        "sidebar header"
-        "sidebar content"
-        "sidebar footer";
+    padding: 0 20px;
+    text-align: center;
 }
 
-.header {
-    background-color: $header-colour;
-    grid-area: header;
-    height: 50px;
+h1 {
+    color: $header-font-colour;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.header h1 {
-    margin: 0;
-}
-
-
-.content {
-    grid-area: content;
-}
-
-body {
-    margin: 0;
-}
-
-.card {    
-    margin: 10px 30px;
-    border: 2px solid $outline-colour ;
-}
-
-.card-header {
-    background-color: $outline-colour;
-}
-
-.card-header h2 {
-    padding: 10px;
-    margin: 0;
-}
-
-.card-content {
-    padding: 0 10px 10px 10px;
-}
 
 .list-unstyled {
     list-style: none;
-  }
+}
 
 /* Code Styling - https://github.com/jwarby/jekyll-pygments-themes/blob/master/native.css */
 .highlight pre { background-color: #404040 }
