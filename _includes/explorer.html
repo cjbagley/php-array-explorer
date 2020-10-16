@@ -1,19 +1,13 @@
-<section class="card">
-    <header class="card-header">
-        <h2>Explore</h2>
-    </header>
-    <div class="card-content">
-        <form action="/form-handling-page.html" method="post">
-            <p>
-            <label for="initial_section">I would like to:</label>
-            <select id="initial_section" name=”initial_section”>
-                <option value="">-- Select --</option>
-                {% for item in site.data.explorer_options %}
-                    <option value="{{ item.key }}">{{ item.value }}</option>
-                {% endfor%}
-            </select>
-            </p>
-            <button type=”submit”>Go!</button>
-        </form>
-    </div>
-</section>
+<nav class="card-holder">
+    <h2 class="card-header">I would like to...</h2>
+    <ul class="list-unstyled grid">
+        <li class="col-1-4">Item 1</li>
+        <li class="col-1-4">Item 1</li>
+        <li class="col-1-4">Item 1</li>
+        <li class="col-1-4">Item 1</li>
+        <li class="col-1-4">Item 1</li>
+        <li class="col-1-4">Item 1</li>
+        <li class="col-1-4">Item 1</li>
+        <li class="col-1-4">Item 1</li>
+    </ul>
+</nav>
