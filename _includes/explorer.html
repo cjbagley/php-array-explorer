@@ -1,13 +1,8 @@
 <nav class="card-holder">
-    <h2 class="card-header">I would like to...</h2>
+    <header class="card-header"><h2>I would like to...</h2></header>
     <ul class="list-unstyled grid">
-        <li class="col-1-4">Item 1</li>
-        <li class="col-1-4">Item 1</li>
-        <li class="col-1-4">Item 1</li>
-        <li class="col-1-4">Item 1</li>
-        <li class="col-1-4">Item 1</li>
-        <li class="col-1-4">Item 1</li>
-        <li class="col-1-4">Item 1</li>
-        <li class="col-1-4">Item 1</li>
+        {% for item in site.data.explorer_options %}
+            <li class="card col-1-4">{{ item.value }}</li>
+        {% endfor %}
     </ul>
 </nav>

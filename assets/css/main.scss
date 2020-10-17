@@ -71,21 +71,31 @@ h1 {
 
 .card-holder {
     border: 5px solid $primary-colour;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .card-header {
     background-color: $primary-colour;
 }
 
-h2.card-header {
+.card-header h2 {
     font-size: 50px;
     font-weight: bold;
     color: white;
 }
 
+.card {
+    padding: 10px;
+}
+
 
 .list-unstyled {
     list-style: none;
+}
+
+.text-left {
+    text-align: left;
 }
 
 /* Code Styling - https://github.com/jwarby/jekyll-pygments-themes/blob/master/native.css */

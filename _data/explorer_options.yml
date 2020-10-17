@@ -17,3 +17,21 @@
         value: Remove Element
       - key: remove_element_from_end
         value: Remove Element From End
+
+- key: find_single_item
+  value: Find single item
+
+- key: filter_or_reduce_values
+  value: Filter/Reduce values
+
+- key: walk_over
+  value: Walk over each item in array
+
+- key: return_string
+  value: Return a string
+
+- key: order
+  value: Order
+
+- key: other
+  value: Other
