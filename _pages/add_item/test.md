@@ -1,5 +1,6 @@
 ---
-title: array_chunk
+title: Test Page
+explorer_key: add_item
 ---
 This is a test to see if it works
 

@@ -4,6 +4,7 @@ $page-background-colour: #f8f0fb;
 $primary-colour: #3d348b;
 
 
+
 * {
 	vertical-align: baseline;
 	font-weight: inherit;
@@ -87,6 +88,11 @@ h1 {
 
 .card {
     padding: 10px;
+}
+
+.card.active {
+    background-color: $primary-colour;
+    color: white;
 }
 
 
