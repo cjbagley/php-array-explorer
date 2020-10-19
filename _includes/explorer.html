@@ -1,5 +1,5 @@
 <nav class="card-holder">
-    <header class="card-header"><h2>I would like to...</h2></header>
+    <header class="card-holder-header"><h2>I would like to...</h2></header>
     <ul class="list-unstyled grid">
         {% for item in site.data.explorer_options %}
             <li class="card col-1-4 {% if item.key == page.explorer_key %} active {% endif %}">{{ item.value }}</li>

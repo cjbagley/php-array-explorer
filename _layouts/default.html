@@ -17,12 +17,22 @@
     <main class="content">
         {% include explorer.html %}
         <section class="card-holder">
-            <header class="card-header">
+            <header class="card-holder-header">
                 <h2>{{ page.title }}</h2>
             </header>
             <div class="card text-left">
                 {{ content }}
+                {% if page.php_net_link %}
+                <div class="document-link">
+                    <a href="{{ page.php_net_link }}">php.net link</a>
+                </div>
+                {% endif %}
             </div>
+            {% if page.card_footer %}
+            <div class="card-holder-footer">
+                <a href="page.php_net_link">php.net link</a>
+            </div>
+            {% endif %}
         </section>
     </main>
 </body>
