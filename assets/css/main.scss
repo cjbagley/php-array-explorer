@@ -114,9 +114,17 @@ h1 {
 }
 
 
-.highlight pre { background-color: #332c23; }
-
 .highlight {
+
+    margin: 20px;
+
+    pre { 
+        background-color: #332c23;
+        padding: 10px 0;
+        font-size: 20px;
+        line-height: 1.5rem;
+    }
+
     .nb { color: #e2c044; }
     .p, .nv { color: #6be1ff; }
 }
