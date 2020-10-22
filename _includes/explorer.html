@@ -6,3 +6,16 @@
         {% endfor %}
     </ul>
 </nav>
+
+{% for item in site.data.explorer_options %}
+    {% if item.key == page.explorer_key %}
+    <nav class="card-holder">
+        <header class="card-holder-header"><h2>and...</h2></header>
+        {% for sub_item in item.sub_items %}
+            <ul class="list-unstyled grid">
+                <li class="card col-1-4">{{ sub_item.value }}</li>
+            </ul>
+        {% endfor %}
+    </nav>
+    {% endif %}
+{% endfor %}
