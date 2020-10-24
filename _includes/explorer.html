@@ -10,7 +10,7 @@
 {% for item in site.data.explorer_options %}
     {% if item.key == page.explorer_key %}
     <nav class="card-holder">
-        <header class="card-holder-header"><h2>and...</h2></header>
+        <header class="card-holder-header"><h2>Specifically...</h2></header>
         <ul class="list-unstyled grid">
             {% for sub_item in item.sub_items %}
                 <li class="card col-1-4 {% if sub_item.key == page.explorer_sub_key %} active {% endif %}">{{ sub_item.value }}</li>

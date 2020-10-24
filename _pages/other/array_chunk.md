@@ -7,11 +7,9 @@ php_net_link: https://www.php.net/manual/en/function.array-chunk.php
 ```php
     <?php
 
-    $input = ['John','Paul','George','Ringo'];
+    $array = ['John','Paul','George','Ringo'];
 
-    $chunks = array_chunk($input, 2); 
-
-    print_r($chunks);
+    print_r(array_chunk($array, 2));
 ```
 
 {% include output_header.html %}
