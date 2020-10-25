@@ -7,7 +7,7 @@ php_net_link: https://www.php.net/manual/en/function.array-chunk.php
 ```php
     <?php
 
-    $array = ['John','Paul','George','Ringo'];
+    $array = ['John', 'Paul', 'George', 'Ringo'];
 
     print_r(array_chunk($array, 2));
 ```

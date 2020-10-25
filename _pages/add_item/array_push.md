@@ -2,6 +2,7 @@
 title: array_push
 explorer_key: add_item
 explorer_sub_key: add_element_to_end
+php_net_link: https://www.php.net/manual/en/function.array-push.php
 ---
 
 If you just want to add a single element to an array, the PHP recommended method is:
@@ -16,7 +17,7 @@ The array_push() function can be used for adding just one element, however it is
 ```php
     <?php
 
-    $array = ['one','two','three','four'];
+    $array = ['one', 'two', 'three', 'four'];
 
     array_push($array, 'five', 'six', 'seven'); 
 
