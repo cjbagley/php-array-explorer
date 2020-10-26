@@ -1,8 +1,6 @@
 - key: add_item
   value: Add Item(s)
   sub_items:
-    - key: add_element
-      value: Add Element
     - key: add_element_to_beginning
       value: Add Element To Beginning
     - key: add_element_to_end
@@ -11,8 +9,8 @@
 - key: remove_item
   value: Remove Item(s)
   sub_items:
-    - key: remove_element
-      value: Remove Element
+    - key: remove_element_from_beginning
+      value: Remove Element From Beginning
     - key: remove_element_from_end
       value: Remove Element From End
 
