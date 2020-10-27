@@ -15,20 +15,23 @@
     </header>
 
     <main class="content">
-        {% include explorer.html %}
-        <section class="card-holder">
-            <header class="card-holder-header">
-                <h2>You could use {{ page.title }}</h2>
-            </header>
-            <div class="card text-left">
-                {{ content }}
-                {% if page.php_net_link %}
-                <div class="php-link">
-                    <a href="{{ page.php_net_link }}">php.net link</a>
+        {% if page.title == 'Home' %}
+            {% include explorer.html %}
+        {% else %}
+            <section class="card-holder">
+                <header class="card-holder-header">
+                    <h2>You could use {{ page.title }}</h2>
+                </header>
+                <div class="card text-left">
+                    {{ content }}
+                    {% if page.php_net_link %}
+                    <div class="php-link">
+                        <a href="{{ page.php_net_link }}">php.net link</a>
+                    </div>
+                    {% endif %}
                 </div>
-                {% endif %}
-            </div>
-        </section>
+            </section>
+        {% endif %}
     </main>
 </body>
 
