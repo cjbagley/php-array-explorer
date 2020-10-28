@@ -1,21 +1,25 @@
-<nav class="card-holder">
+<div class="card-holder">
     <header class="card-holder-header"><h2>I would like to...</h2></header>
     <ul class="list-unstyled grid">
         {% for item in site.data.explorer_options %}
-            <li class="card col-1-4 {% if item.key == page.explorer_key %} active {% endif %}">{{ item.value }}</li>
+            <li class="card col-1-4">
+                <a href="#{{ item.key }}">{{ item.value }}</a>
+            </li>
         {% endfor %}
     </ul>
-</nav>
 
-{% for item in site.data.explorer_options %}
-    {% if item.key == page.explorer_key %}
-    <nav class="card-holder">
-        <header class="card-holder-header"><h2>Specifically...</h2></header>
-        <ul class="list-unstyled grid">
-            {% for sub_item in item.sub_items %}
-                <li class="card col-1-4 {% if sub_item.key == page.explorer_sub_key %} active {% endif %}">{{ sub_item.value }}</li>
+    <nav class='main-nav'>
+        <ul class="grid">
+            {% for item in site.data.explorer_options %}
+                <div class="main-nav-group">
+                <h3 class="main-nav-header" id="{{ item.key }}">{{ item.value }}</h3>
+                {% for sub_item in item.sub_items %}
+                    <li class="main-nav-link">
+                        <a href="{{ item.key }}/{{ sub_item.page }}">{{ sub_item.value }}</a>
+                    </li>
+                {% endfor %}
+                </div>
             {% endfor %}
         </ul>
     </nav>
-    {% endif %}
-{% endfor %}
+</div>

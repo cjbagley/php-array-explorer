@@ -3,16 +3,20 @@
   sub_items:
     - key: add_element_to_beginning
       value: Add Element To Beginning
+      page: array_unshift
     - key: add_element_to_end
       value: Add Element To End
+      page: array_push
 
 - key: remove_item
   value: Remove Item(s)
   sub_items:
     - key: remove_element_from_beginning
       value: Remove Element From Beginning
+      page: array_shift
     - key: remove_element_from_end
       value: Remove Element From End
+      page: array_pop
 
 - key: find_single_item
   value: Find single item
