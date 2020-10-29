@@ -7,6 +7,9 @@
     - key: add_element_to_end
       value: Add Element To End
       page: array_push
+    - key: add_array_to_another_array
+      value: Add Array To Another Array
+      page: array_merge
 
 - key: remove_item
   value: Remove Item(s)
@@ -35,3 +38,7 @@
 
 - key: other
   value: Other
+  sub_items:
+    - key: break_array_into_pieces
+      value: Break Array Into pieces
+      page: array_chunk
