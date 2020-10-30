@@ -20,12 +20,19 @@
     - key: remove_element_from_end
       value: Remove Element From End
       page: array_pop
+    - key: remove_part_of_array
+      value: Remove Part Of Array
+      page: array_slice
 
-- key: find_single_item
-  value: Find single item
+- key: search
+  value: Search
+  sub_items:
+    - key: to_see_if_exists_in_array
+      value: To See If Exists In Array
+      page: in_array
 
 - key: filter_or_reduce_values
-  value: Filter/Reduce values
+  value: Filter/Reduce valuesx`
 
 - key: walk_over
   value: Walk over each item in array
