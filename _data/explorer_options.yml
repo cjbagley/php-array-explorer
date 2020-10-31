@@ -27,12 +27,18 @@
 - key: search
   value: Search
   sub_items:
-    - key: to_see_if_exists_in_array
-      value: To See If Exists In Array
+    - key: to_see_if_value_exists_in_array
+      value: To See If Value Exists In Array
       page: in_array
+    - key: to_see_if_key_exists_in_array
+      value: To See If Key Exists In Array
+      page: array_key_exists
+    - key: to_get_key_of_first_instance
+      value: To Get Key Of First Instance
+      page: array_search
 
 - key: filter_or_reduce_values
-  value: Filter/Reduce valuesx`
+  value: Filter/Reduce values
 
 - key: walk_over
   value: Walk over each item in array
