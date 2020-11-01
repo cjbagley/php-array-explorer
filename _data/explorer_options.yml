@@ -39,6 +39,13 @@
 
 - key: filter_or_reduce_values
   value: Filter/Reduce values
+  sub_items:
+    - key: leaving_only_those_that_meet_a_given_condition
+      value: Leaving Only Those That Meet A Given Condition
+      page: array_filter
+    - key: remove_duplicates
+      value: Remove Duplicates
+      page: array_unique
 
 - key: walk_over
   value: Walk over each item in array
