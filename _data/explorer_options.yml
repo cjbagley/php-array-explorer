@@ -56,3 +56,6 @@
     - key: calculate_the_sum_of_values
       value: Calculate The Sum Of Values In An Array
       page: array_sum
+    - key: count_how_many_times_a_value_occurs
+      value: Count How Many Times A Value Occurs
+      page: array_count_values

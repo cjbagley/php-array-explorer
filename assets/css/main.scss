@@ -1,6 +1,7 @@
 ---
 ---
 $page-background-colour: #f8f0fb;
+$card-background-colour: #5ab1bb;
 $primary-colour: #3d348b;
 
 
@@ -68,6 +69,7 @@ h1 {
     color: $primary-colour;
     font-size: 50px;
     font-weight: bold;
+    margin: 20px;
 }
 
 .main-nav {
@@ -98,6 +100,10 @@ h1 {
 
 .card {
     padding: 10px;
+    background: $card-background-colour;
+    border-radius: 10px;
+    margin: 10px;
+    width: auto;
 }
 
 .card.active {
@@ -113,6 +119,7 @@ h1 {
 
 .card-holder-header {
     background-color: $primary-colour;
+    padding: 20px;
 }
 
 .card-holder-header h2 {
