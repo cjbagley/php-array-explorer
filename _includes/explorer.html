@@ -2,7 +2,7 @@
     <header class="card-holder-header"><h2>I would like to...</h2></header>
     <ul class="list-unstyled grid">
         {% for item in site.data.explorer_options %}
-            <li class="card col-1-4">
+            <li class="card quick-link col-1-4">
                 <a href="#{{ item.key }}">{{ item.value }}</a>
             </li>
         {% endfor %}
