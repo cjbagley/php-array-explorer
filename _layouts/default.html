@@ -11,7 +11,7 @@
 <body>
 
     <header class="header">
-        <h1>PHP Array Explorer</h1>
+        <h1><a href='/'>PHP Array Explorer</a></h1>
     </header>
 
     <main class="content">
@@ -20,7 +20,8 @@
         {% else %}
             <section class="card-holder">
                 <header class="card-holder-header">
-                    <h2>You could use {{ page.title }}</h2>
+                    <span class="page-title-lead">To {{ page.explorer_sub_key | replace:'_',' ' }} you could use... </span>
+                    <h2>{{ page.title }}</h2>
                 </header>
                 <div class="card text-left">
                     {{ content }}
