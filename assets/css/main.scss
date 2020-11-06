@@ -15,7 +15,7 @@ $primary-colour: #3d348b;
 	border: 0 none;
 	outline: 0;
 	padding: 0;
-    margin: 0;
+    //margin: 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -131,15 +131,19 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     color: white;
+    margin: 5px;
 }
 
 .card-holder-footer {
-    background-color: $primary-colour;
+    background-color: $card-background-colour;
     color: white;
     font-size: 20px;
+    border-radius: 0 0 4px 4px;
+    padding: 10px;
+    font-weight: bold;
 }
 
-.output-header, .php-link {
+.output-header {
     margin-left: 40px;
     font-weight: bold;
 }

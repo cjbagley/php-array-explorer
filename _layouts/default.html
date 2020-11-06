@@ -25,12 +25,13 @@
                 </header>
                 <div class="card text-left">
                     {{ content }}
-                    {% if page.php_net_link %}
-                    <div class="php-link">
-                        <a href="{{ page.php_net_link }}">php.net link</a>
-                    </div>
-                    {% endif %}
+
                 </div>
+                {% if page.php_net_link %}
+                    <footer class="card-holder-footer">
+                        <a class="php-link" href="{{ page.php_net_link }}">php.net link</a>
+                    </footer>
+                {% endif %}
             </section>
         {% endif %}
     </main>
