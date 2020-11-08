@@ -1,8 +1,6 @@
 ---
 title: array_merge
-explorer_key: add_item
-explorer_sub_key: add_array_to_another_array
-php_net_link: https://www.php.net/manual/en/function.array-merge.php
+description: add an array to another array
 ---
 
 ```php

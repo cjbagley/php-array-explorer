@@ -1,8 +1,6 @@
 ---
 title: array_unshift
-explorer_key: add_item
-explorer_sub_key: add_element_to_start
-php_net_link: https://www.php.net/manual/en/function.array-unshift.php
+description: add an element to the beginning
 ---
 
 ```php

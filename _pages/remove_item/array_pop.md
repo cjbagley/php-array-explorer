@@ -1,8 +1,6 @@
 ---
 title: array_pop
-explorer_key: remove_item
-explorer_sub_key: remove_element_from_end
-php_net_link: https://www.php.net/manual/en/function.array-pop.php
+description: remove an element from the end
 ---
 
 ```php

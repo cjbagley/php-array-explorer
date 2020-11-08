@@ -1,8 +1,6 @@
 ---
 title: array_search
-explorer_key: search
-explorer_sub_key: to_get_key_of_first_instance
-php_net_link: https://www.php.net/manual/en/function.array-search.php
+description: get the key of the first instance in an array
 ---
 
 ```php

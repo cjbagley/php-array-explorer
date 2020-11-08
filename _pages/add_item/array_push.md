@@ -1,18 +1,16 @@
 ---
 title: array_push
-explorer_key: add_item
-explorer_sub_key: add_element_to_end
-php_net_link: https://www.php.net/manual/en/function.array-push.php
+description: add an element to the end
 ---
 
-If you just want to add a single element to an array, the PHP recommended method is:
+<p>If you just want to add a single element to an array, the PHP recommended method is:</p>
 
 ```php
     <?php
 
     $array[] = $variable;
 ```
-The array_push() function can be used for adding just one element, however it is best used for adding multiple elements:
+<p>The array_push() function can be used for adding just one element, however it is best used for adding multiple elements:</p>
 
 ```php
     <?php

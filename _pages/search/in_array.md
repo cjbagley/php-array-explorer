@@ -1,8 +1,6 @@
 ---
 title: in_array
-explorer_key: search
-explorer_sub_key: to_see_if_value_exists_in_array
-php_net_link: https://www.php.net/manual/en/function.in-array.php
+description: see if a value exists in an array
 ---
 
 ```php

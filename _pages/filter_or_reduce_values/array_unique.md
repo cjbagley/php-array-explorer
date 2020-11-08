@@ -1,8 +1,6 @@
 ---
 title: array_unique
-explorer_key: filter_or_reduce_values
-explorer_sub_key: remove_duplicates
-php_net_link: https://www.php.net/manual/en/function.array-unique.php
+description: remove duplicates
 ---
 
 ```php

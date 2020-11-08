@@ -1,7 +1,6 @@
 ---
 title: array_sum
-explorer_key: other
-php_net_link: https://www.php.net/manual/en/function.array-sum.php
+description: calculate the sum of values in an array
 ---
 
 ```php

@@ -1,8 +1,6 @@
 ---
 title: array_slice
-explorer_key: remove_item
-explorer_sub_key: remove_part_of_array
-php_net_link: https://www.php.net/manual/en/function.array-slice.php
+description: remove part of an array    
 ---
 
 ```php

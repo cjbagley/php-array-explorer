@@ -1,8 +1,6 @@
 ---
 title: array_filter
-explorer_key: filter_or_reduce_values
-explorer_sub_key: leaving_only_those_that_meet_a_given_condition
-php_net_link: https://www.php.net/manual/en/function.array-filter.php
+description: leave only those elements that meet a given condition
 ---
 
 ```php

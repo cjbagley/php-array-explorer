@@ -20,18 +20,16 @@
         {% else %}
             <section class="card-holder">
                 <header class="card-holder-header">
-                    <span class="page-title-lead">To {{ page.explorer_sub_key | replace:'_',' ' }} you could use... </span>
-                    <h2>{{ page.title }}</h2>
+                    <span class="page-title-lead">To {{ page.description }}, you could use... </span>
+                    <h2>{{ page.title }}()</h2>
                 </header>
-                <div class="card text-left">
+                <div class="card text-left example">
                     {{ content }}
 
                 </div>
-                {% if page.php_net_link %}
-                    <footer class="card-holder-footer">
-                        <a class="php-link" href="{{ page.php_net_link }}">php.net link</a>
-                    </footer>
-                {% endif %}
+                <footer class="card-holder-footer">
+                    <a class="php-link" href="https://www.php.net/manual/en/function.{{ page.title|replace:'_','-' }}.php">php.net link</a>
+                </footer>
             </section>
         {% endif %}
     </main>

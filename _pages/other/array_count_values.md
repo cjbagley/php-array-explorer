@@ -1,8 +1,6 @@
 ---
 title: array_count_values
-explorer_key: other
-explorer_sub_key: count_how_many_times_a_value_occurs
-php_net_link: https://www.php.net/manual/en/function.array-count-values.php
+description: count how many times a value appears in an array
 ---
 
 ```php
