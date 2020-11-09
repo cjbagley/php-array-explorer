@@ -15,7 +15,7 @@
                 <h3 class="main-nav-header" id="{{ item.key }}">{{ item.value }}</h3>
                 {% for sub_item in item.sub_items %}
                     <li class="main-nav-link">
-                        <a href="{{ sub_item.page }}">{{ sub_item.value }}</a>
+                        <a href="{{ sub_item.page }}">{{ sub_item.value|capitalize }}</a>
                     </li>
                 {% endfor %}
                 </div>

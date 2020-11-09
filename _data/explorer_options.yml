@@ -1,61 +1,49 @@
 - key: add_item
   value: Add Item(s)
   sub_items:
-    - key: add_element_to_beginning
-      value: Add Element To Beginning
+    - value: Add Element To Beginning
       page: array_unshift
-    - key: add_element_to_end
-      value: Add Element To End
+    - value: Add Element To End
       page: array_push
-    - key: add_array_to_another_array
-      value: Add Array To Another Array
+    - value: Add Array To Another Array
       page: array_merge
 
 - key: remove_item
   value: Remove Item(s)
   sub_items:
-    - key: remove_element_from_beginning
-      value: Remove Element From Beginning
+    - value: Remove Element From Beginning
       page: array_shift
-    - key: remove_element_from_end
-      value: Remove Element From End
+    - value: Remove Element From End
       page: array_pop
-    - key: remove_part_of_array
-      value: Remove Part Of Array
+    - value: Remove Part Of Array
       page: array_slice
 
 - key: search
   value: Search
   sub_items:
-    - key: to_see_if_value_exists_in_array
-      value: To See If Value Exists In Array
+    - value: To See If Value Exists In Array
       page: in_array
-    - key: to_see_if_key_exists_in_array
-      value: To See If Key Exists In Array
+    - value: To See If Key Exists In Array
       page: array_key_exists
-    - key: to_get_key_of_first_instance
-      value: To Get Key Of First Instance
+    - value: To Get Key Of First Instance
       page: array_search
 
 - key: filter_or_reduce_values
   value: Filter/Reduce values
   sub_items:
-    - key: leaving_only_those_that_meet_a_given_condition
-      value: Leaving Only Those That Meet A Given Condition
+    - value: Leaving Only Those That Meet A Given Condition
       page: array_filter
-    - key: remove_duplicates
-      value: Remove Duplicates
+    - value: Remove Duplicates
       page: array_unique
 
 - key: other
   value: Other
   sub_items:
-    - key: break_array_into_pieces
-      value: Break Array Into pieces
+    - value: Break Array Into pieces
       page: array_chunk
-    - key: calculate_the_sum_of_values
-      value: Calculate The Sum Of Values In An Array
+    - value: Calculate The Sum Of Values In An Array
       page: array_sum
-    - key: count_how_many_times_a_value_occurs
-      value: Count How Many Times A Value Occurs
+    - value: Count How Many Times A Value Occurs
       page: array_count_values
+    - value: Change The Case Of The Array Keys
+      page: array_change_key_case
